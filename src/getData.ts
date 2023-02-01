@@ -43,10 +43,15 @@ export function getPersons(element: HTMLElement, target: HTMLElement) {
   let data;
   const handleClick = async () => {
     element.innerHTML = `Get data`;
-    data = await loadData();
-    target.innerHTML = data
-      .map((person) => `<li>${JSON.stringify(person)}</li>`)
-      .join("");
+    try {
+      data = await loadData();
+      target.innerHTML = data
+        .map((person) => `<li>${JSON.stringify(person)}</li>`)
+        .join("");
+    } catch (error) {
+      target.innerHTML = `<li>${error}</li>`;
+      console.error(error);
+    }
   };
   element.addEventListener("click", () => handleClick());
 }
