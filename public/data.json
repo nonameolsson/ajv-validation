@@ -1,0 +1,28 @@
+{
+  "people": [
+    {
+      "name": "Andreas",
+      "country": "Sweden",
+      "weddingDate": "2023-02-01T00:00:00.000Z",
+      "married": true,
+      "numberOfGuests": 300
+    },
+    {
+      "name": "Carl",
+      "country": "Germany",
+      "married": false
+    },
+    {
+      "name": "Patrick",
+      "country": "Norway",
+      "married": false
+    },
+    {
+      "name": "Hans",
+      "country": "Denmark",
+      "date": "2020-05-18T00:00:00.000Z",
+      "married": true,
+      "numberOfGuests": 100
+    }
+  ]
+}
